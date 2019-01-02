@@ -11,6 +11,15 @@
 	height: 100vh;
     overflow-y: hidden;
 }
+.color-white{
+	color:#ffffff;
+}
+.color-yellow{
+	color:#FFFF91;
+}
+.color-blue{
+	color:#50C8C8;
+}
 #main-header{
 	position: fixed;
     height: 100vh;
@@ -25,7 +34,7 @@
     border-bottom: 1px solid rgba(151, 222, 251, 0.25);
 }
 #main-header ul li a .fas{
-	color: #97DEFB;
+	color: #D7E4E2;
 	font-size: 1.85rem;
 	-webkit-transition:.3s color ease-in-out;
 	transition:.3s color ease-in-out;
@@ -34,6 +43,7 @@
 	color: #ffffff;
 }
 .section{
+	overflow: hidden;
 	position: relative;
 	z-index: 1;
 	width: 100%;
@@ -45,8 +55,7 @@
 	margin-left: 50px;
 }
 .title-section{
-	font-size: 1.7rem;
-	color: #59c7f1;
+	font-size: 5rem;
 	text-transform:uppercase; 
 }
 .subtitle-section{
@@ -55,14 +64,25 @@
     color: #FFFFFF;
     text-transform: capitalize;
 }
+.subtitle-section:before {
+    bottom: .25rem;
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 85px;
+    height: 1px;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #ffffff;
+}
 /**/
 .img-profile-container{
 	width: 220px;
     height: 220px;
     overflow: hidden;
     border-radius: 50%;
-    border: 10px solid #ffffff;
-    margin: 5rem auto 0;
+    border: 10px solid #50C8C8;
+    margin: 0 auto 0;
     animation: float 5s ease-in-out infinite;
     position: relative;
     z-index: 2;
@@ -84,19 +104,16 @@
     bottom: 100px;
     z-index: 1;
 }
-@media only screen and (max-width: 767px){
-	.img-profile-container{
-		width: 220px;
-    	height: 220px;
-		margin-top: 2rem;
-	}
-	.img-gears{
-		left: 60px;
-	}
-	.img-coding{
-		width: 300px;
-		right: -50px;
-	}
+.skills{
+	list-style: none;
+    margin-top: 1rem;
+}
+.skills li{
+	font-size: 2rem;
+}
+.skills li:before {
+	font-family: "Font Awesome 5 Free";
+    content: "\f005";
 }
 /**/
 .social-media-container{
@@ -135,6 +152,30 @@
     font-weight: lighter;
     font-size: 12px;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
+    max-width: 300px;
     color: #fff;
+}
+/**/
+@media only screen and (max-width: 767px){
+	.title-section {
+    	font-size: 3rem;
+	}
+	.img-profile-container{
+		width: 220px;
+    	height: 220px;
+		margin-top: 2rem;
+	}
+	.img-gears{
+		left: 60px;
+	}
+	.img-coding{
+		width: 300px;
+		right: -50px;
+	}
+}
+@media only screen and (max-width: 350px){
+	.title-section {
+    	font-size: 2rem;
+	}
 }
