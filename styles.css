@@ -114,6 +114,9 @@
 .skills li:before {
 	font-family: "Font Awesome 5 Free";
     content: "\f005";
+    font-weight:900;
+    margin-right: 5px;
+    color: #F7D139;
 }
 /**/
 .social-media-container{
