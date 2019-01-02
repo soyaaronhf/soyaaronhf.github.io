@@ -105,8 +105,10 @@
     z-index: 1;
 }
 .skills{
-	list-style: none;
+    position: relative;
+    list-style: none;
     margin-top: 1rem;
+    z-index: 2;
 }
 .skills li{
 	font-size: 2rem;
@@ -127,6 +129,7 @@
 }
 .social-media{
 	list-style: none;
+	text-align: center;
 }
 .social-media li{
 	display: inline-block;
@@ -161,7 +164,16 @@
 }
 /**/
 @media only screen and (max-width: 767px){
-	.title-section {
+	.img-coding{
+		opacity: .5;
+	}
+	.skills li{
+    	font-size: 1rem;
+	}
+	.social-media li a i{
+    	font-size: 3rem;
+	}
+	.title-section{
     	font-size: 3rem;
 	}
 	.img-profile-container{
@@ -175,6 +187,13 @@
 	.img-coding{
 		width: 300px;
 		right: -50px;
+	}
+	.social-media li a i:not(first-child){
+    	margin-left: 1rem;
+    	margin-bottom: 1rem;
+	}
+	.social-media li a i{
+		margin-right: 0 !important;
 	}
 }
 @media only screen and (max-width: 350px){
