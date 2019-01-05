@@ -211,7 +211,7 @@
 		right: -50px;
 	}
 	.social-media li a i:not(first-child){
-    	margin-left: 1rem;
+    	margin-left: 0;
     	margin-bottom: 1rem;
 	}
 	.social-media li a i{
